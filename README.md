@@ -8,8 +8,8 @@ I am not associated with and have not yet contributed to [Silverbullet](https://
 - Local server(s)
 - Cloud VM(s)
 - Web Domain / DNS
-- Reverse proxy
-- Load balancer
+- Reverse Proxy
+- Load Balancer
 - Firewalls
 
 ## Virtual Machine Setup
