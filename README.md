@@ -13,9 +13,9 @@ I am not associated with and have not yet contributed to [Silverbullet](https://
 - Firewalls
 
 ## Virtual Machine Setup
-- Ubuntu Server - Any LTS 18.04 or newer should be fine
+- Ubuntu Server - Any LTS 18.04 or newer should be fine.
 - Updates and configure any necessary extras for the environment.
-- Install Docker - Optionally install a docker manager. IE Portainer or Yacht
+- Install Docker - Optionally install a docker manager. IE Portainer or Yacht.
 - Choose a directory for Silverbullet data and notes to be stored.
 - Spin up Silverbullet container using your preferred method.
   - Login credentials, directory, and port number must be included.
@@ -33,21 +33,22 @@ I am not associated with and have not yet contributed to [Silverbullet](https://
 - Only forward requests made to FQDN.
 - Forward to Silverbullet VMs on ports specified in docker.
 - Valid TLS certificate from CA.
-- Redirect all http requests to https.
+- Redirect all HTTP requests to HTTPS.
 - Persistence to stay connected to the same instance for that session.
 
 ## Firewall Configuration
 - Reverse Proxy / Load Balancer
-  - Restrict access to only allow 80/443 requests coming from CloudFlare IPs. Use CloudFlare WAF to manage access.
+  - Restrict access to only allow 80/443 requests coming from CloudFlare IPs.
 - Virtual Machines
   - Allow Syncthing ports.
-  - Only allow incoming 443 requests coming from the Load Balancer IP.
+  - Allow connection from reverse proxy IP on specified port.
+  - Only allow incoming HTTPS requests coming from the Load Balancer IP.
 - Local instances
-  - Allow connection from reverse proxy IP on specified port
-  - Forward respective port to local IP of instance running on that port
+  - Allow connection from reverse proxy IP on specified port.
+  - Forward respective port to local IP of instance running on that port.
 
 ## CloudFlare Configuration
-- Domain and A name pointing to Reverse Proxy / Load Balancer
+- Domain and A name pointing to Reverse Proxy / Load Balancer.
 - Full (strict) TLS for end-to-end encryption.
   - Requires valid certificate from CA.
 - WAF to restrict access.
