@@ -41,10 +41,9 @@ I am not associated with and have not yet contributed to [Silverbullet](https://
   - Restrict access to only allow 80/443 requests coming from CloudFlare IPs.
 - Virtual Machines
   - Allow Syncthing ports.
-  - Allow connection from reverse proxy IP on specified port.
   - Only allow incoming HTTPS requests coming from the Load Balancer IP.
 - Local instances
-  - Allow connection from reverse proxy IP on specified port.
+  - Only allow incoming HTTPS requests coming from the Load Balancer IP.
   - Forward respective port to local IP of instance running on that port.
 
 ## CloudFlare Configuration
