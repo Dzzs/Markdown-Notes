@@ -1,6 +1,6 @@
 # Introduction
 
-This document outlines my setup of an open source [Personal Knowledge Management](https://en.wikipedia.org/wiki/Personal_knowledge_management) / note taking tool called [Silverbullet](https://github.com/silverbulletmd/silverbullet). In a secure and highly available manner. My ISP blocks 80/443/445 traffic so this gets around those limitations as well. Parts are intentionally kept vague for security. Some configuration will require temporarily opening up security restrictions.
+This document outlines my setup of an open source [Personal Knowledge Management](https://en.wikipedia.org/wiki/Personal_knowledge_management) / note taking tool called [Silverbullet](https://github.com/silverbulletmd/silverbullet). In a secure and highly available manner. My ISP blocks 80/443/445 traffic so this gets around those limitations as well. Parts of this document are intentionally kept vague for security. Some configuration will require temporarily opening up security restrictions.
 
 I am not associated with and have not yet contributed to [Silverbullet](https://github.com/silverbulletmd/silverbullet).
 
